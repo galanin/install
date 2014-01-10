@@ -1,0 +1,606 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Thank you for downloading RubyMine</title>
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+    <meta name="author" content="JetBrains, Inc., http://www.jetbrains.com"/>
+
+        
+<link rel="canonical" href="http://www.jetbrains.com/ruby/download/download_thanks.jsp" />
+
+
+                    <meta http-equiv="cache-control" content="no-cache"/>  <meta http-equiv="pragma" content="no-cache"/>  <meta http-equiv="expires" content="0"/>     
+        <link rel="stylesheet" type="text/css" media="screen" href="styleset1.css?ver=17_idea_122013"/>
+
+
+<link rel="stylesheet" type="text/css" media="handheld" href="/styles2/mobile.css"/>
+<link rel="alternate stylesheet" type="text/css" media="screen"
+      href="/styles2/alternate_styles/alternate_style.css" title="textmode"/>
+
+<noscript>
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles2/noscript.css"/>
+</noscript>
+        <script type="text/javascript" src="/js2/css_browser_selector.js"></script>
+<script type="text/javascript" src="/js2/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/js2/jquery/highlight.js"></script>
+<script type="text/javascript" src="/js2/html5.js"></script>
+<script type="text/javascript" src="/js2/common.js?20062013"></script>
+<script type="text/javascript" src="/js2/mkto_function.js"></script>                                           <script type="text/javascript" src="../../js2/cookie.js"></script>                      <script type="text/javascript" src="../../js2/jquery/fancybox.js"></script>                      <script type="text/javascript">                      $(document).ready(function() {                      $(".videopopup").fancybox({                      'width'			    : 825,                      'height'			: 625,                      'autoScale'         : false,                      'transitionIn'      : 'none',                      'transitionOut'     : 'none',                      'type'              : 'iframe'                      });                      });                      </script>                      <script type="text/javascript">                      $(document).ready(function() {                      var os = 'linux';                      var getCookieDownload = getCookie("downloadFile");                      var url = 'http://download.jetbrains.com/ruby/RubyMine-6.0.2.tar.gz';                      if (url && getCookieDownload != os) {                      location.href = url;                      setCookie("downloadFile", os, "/", "/");                      }                      });                      </script>                      <script type="text/javascript">                      var _gaq = _gaq || [];                      _gaq.push(                      ['_setAccount', 'UA-940435-8'],                      ['_trackPageview', '/ruby/download/start'],                      ['all._setAccount', 'UA-940435-1'],                      ['all._trackPageview']                      );                      </script>             
+        
+                <link rel="Shortcut Icon" href="/ruby/favicon.ico?08052013" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="/ruby/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/ruby/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/ruby/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/ruby/apple-touch-icon-144x144.png" />
+
+        
+        <script type="text/javascript">
+    
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script></head>
+
+<body id="products" class="ruby down wide" >
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-HNX4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-HNX4');</script>
+<!-- End Google Tag Manager -->
+<header>
+    <div class="container">
+                    <a href="/" class="jb_logo" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: JetBrains Home']);">JetBrains</a>
+                
+        <ul id="jb_nav">
+            <li class="products"><a href="/products.html" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: Products']);">Products</a></li>
+            <li class="support"><a href="/support/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: Support']);">Support</a></li>
+            <li class="devnet"><a href="/devnet/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: Community']);">Community</a></li>
+            <li class="company"><a href="/company/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: Company']);">Company</a></li>
+            <li class="search">
+                    <form method="get"
+                          action="/search/"
+                          name="formSearch"
+                          class="global-search-form"
+                          id="global-search-form">
+                    <fieldset>
+                        <label><input type="text"
+                                      class="words global-search-form-field search-field"
+                                      id="search-field"
+                                      name="q"
+                                                                            value=""
+                                    >
+                        </label>
+                        <label><input type="submit" class="send global-search-form-submit search-submit"></label>
+                    </fieldset>
+                </form>
+            </li>
+        </ul>
+    </div>
+</header>
+<div id="menu_products">
+    <div class="container">
+    <span class="close" title="Close">&times;</span>
+    <div class="leftfloated block25">
+        <h4>IDEs</h4>
+        <ul>
+            <li class="idea"><a href="/idea" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: IntelliJ IDEA']);"><i class="icon product-logo logo-idea-grey size1"></i>IntelliJ IDEA</a></li>
+            <li class="ps"><a href="/phpstorm" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: PhpStorm']);"><i class="icon product-logo logo-phpstorm-grey size1"></i>PhpStorm</a></li>
+            <li class="pc"><a href="/pycharm" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: PyCharm']);"><i class="icon product-logo logo-pycharm-grey size1"></i>PyCharm</a></li>
+            <li class="ruby"><a href="/ruby" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: RubyMine']);"><i class="icon product-logo logo-rubymine-grey size1"></i>RubyMine</a></li>
+            <li class="ws"><a href="/webstorm" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: WebStorm']);"><i class="icon product-logo logo-webstorm-grey size1"></i>WebStorm</a></li>
+            <li class="objc"><a href="/objc" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: AppCode']);"><i class="icon product-logo logo-appcode-grey size1"></i>AppCode</a></li>
+        </ul>
+    </div>
+    <div class="leftfloated block20">
+        <h4>.NET</h4>
+        <ul>
+            <li class="rs"><a href="/resharper" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: ReSharper']);"><i class="icon product-logo logo-resharper-grey size1"></i>ReSharper</a></li>
+            <li class="dt"><a href="/profiler" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: dotTrace']);"><i class="icon product-logo logo-dottrace-grey size1"></i>dotTrace</a></li>
+            <li class="dc"><a href="/dotcover" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: dotCover']);"><i class="icon product-logo logo-dotcover-grey size1"></i>dotCover</a></li>
+            <li class="dp"><a href="/dotpeek" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: dotPeek']);"><i class="icon product-logo logo-dotpeek-grey size1"></i>dotPeek</a></li>
+        </ul>
+    </div>
+    <div class="leftfloated block30">
+        <h4>Teamware</h4>
+        <ul>
+            <li class="tc"><a href="/teamcity" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: TeamCity']);"><i class="icon product-logo logo-teamcity-grey size1"></i>TeamCity</a></li>
+            <li class="yt"><a href="/youtrack" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: YouTrack']);"><i class="icon product-logo logo-youtrack-grey size1"></i>YouTrack</a></li>
+        </ul>
+        <h4>Mobile development</h4>
+        <ul>
+            <li class="objc"><a href="/objc" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: AppCode']);"><i class="icon product-logo logo-appcode-grey size1"></i>AppCode</a></li>
+            <li class="idea"><a href="/idea#community_edition" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: IntelliJ IDEA Community Edition']);"><i class="icon product-logo logo-idea-grey size1"></i>IntelliJ IDEA Community Edition</a></li>
+        </ul>
+    </div>
+    <div class="rightfloated block20">
+        <h4>Languages</h4>
+        <ul class="research">
+            <li class="mps"><a href="/mps" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: MPS']);"><i class="icon product-logo logo-mps-grey size1"></i>MPS</a></li>
+            <li class="kotlin"><a href="/kotlin" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: Kotlin']);"><i class="icon product-logo logo-kotlin-grey size1"></i>Kotlin</a></li>
+            
+        </ul>
+        <p><a href="/products.html" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Header :: View All Products']);">View all products &raquo;</a></p>
+    </div>
+    <br class="clr"/>
+</div></div>
+<div id="product">
+<div class="container">
+        <a class="home_product" href="/ruby/">RubyMine</a>
+                 
+                
+
+</div>
+</div>
+
+<nav>
+<div class="container">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--start_noindex-->
+
+   <ul class="nav">
+
+        <li class="ruby"><a href="/ruby/index.html" title="Overview">Overview</a></li>
+
+        <li class="whatsnew"><a href="/ruby/whatsnew/index.html" title="What's New">What's New</a></li>
+
+        <li class="features"><a href="/ruby/features/index.html" title="Features & Screenshots">Features & Screenshots</a></li>
+
+        <li class="documentation"><a href="/ruby/documentation/index.html" title="Docs & Demos">Docs & Demos</a></li>
+
+        <li class="quickstart"><a href="/ruby/quickstart/index.html" title="Quickstart Guide">Quickstart Guide</a></li>
+
+        <li class="current"><a href="/ruby/download/index.html" title="Download">Download</a></li>
+
+        <li class="buy"><a href="/ruby/buy/index.jsp" title="Buy">Buy</a></li>
+
+    </ul>
+
+
+<!--end_noindex-->
+
+</div>
+</nav>
+
+
+
+
+<div id="main">
+    <div class="container">
+                <div id="content">
+                            
+                                                                        
+            
+<cache:cache>
+    <h1>Thank you for downloading RubyMine!</h1>
+        <div class="box nota_bene licenseKey">
+            <p>Your download will start shortly. If not, please use the following <a href="http://download.jetbrains.com/ruby/RubyMine-6.0.2.tar.gz">direct link</a>.</p>
+        </div>
+        <h4>New to RubyMine?</h4>
+        <div class="rightfloated block40 pullout video">
+            <a class="videopopup" href="../demos/features_overview/index.html">
+                <img title="RubyMine Productivity Features Overview" alt="RubyMine Productivity Features Overview" src="../demos/features_overview/thumb.png">
+            </a>
+        </div>
+        <ul class="starlist">
+            <li>Walk through <a href="../quickstart/index.html">Quickstart Guide</a> to learn RubyMine concepts quick.</li>
+            <li>Watch the <a href="../documentation/index.html">screencasts & demos</a> for quick features overview and some tips.</li>
+            <li>Get to know <a href="http://www.jetbrains.com/ruby/docs/RubyMine_ReferenceCard.pdf">keyboard shortcuts</a> to become more productive even faster.</li>
+        </ul>
+        <br/>
+        <h4>Become a part of RubyMine community</h4>
+        <ul class="starlist">
+            <li>Subscribe to <a href="http://blogs.jetbrains.com/ruby" onClick="_gaq.push(['_trackEvent', 'Follow links', 'External', 'Blog']);">our blog</a></li>
+            <li>Follow <a href="http://twitter.com/rubymine" onClick="_gaq.push(['_trackEvent', 'Follow links', 'External', 'Twitter']);">@RubyMine on Twitter</a></li>
+            <li>Talk to us on <a href="http://devnet.jetbrains.com/community/ruby?view=discussions" onClick="_gaq.push(['_trackEvent', 'Follow links', 'External', 'Forum']);">our discussion forum</a>.</li>
+        </ul>
+        <br/>
+            <p><strong>Subscribe to RubyMine Newsletter</strong>. Find out about new releases and events.
+                
+
+
+
+
+<script type='text/javascript' src='/eforms/dwr/interface/SubscriptionService.js'></script>
+<script type='text/javascript' src='/eforms/dwr/engine.js'></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/styles2/subcription.css"/>
+
+<script type="text/javascript">
+    function trim(str) {
+        return str.replace(/^\s+|\s+$/g, '');
+    }
+    function errMsg(state) {
+        var msg = document.getElementById('error-msg');
+        if (state)msg.style.display = 'block';
+        else msg.style.display = 'none';
+    }
+    function validateEmail(valfield) {
+        var tfld = trim(valfield.value);
+        var email = /^[^@]+@[^@.]+\.[^@]*\w\w$/  ;
+        if (!email.test(tfld)) {
+            errMsg(true);
+            return false;
+        }
+        errMsg(false);
+        return true;
+    }
+    function Proceed() {
+        var el = document.getElementById('emaiForSubscription');
+        if (!validateEmail(el)) {
+            el.focus();
+            return;
+        }
+        document.getElementById('sForm').style.display = "none";
+        document.getElementById('progress').style.display = "block";
+        var request = {
+            email: document.getElementById('emaiForSubscription').value,
+            topic: "jb.rubymine"
+        };
+        SubscriptionService.submitSubscriptionRequest(request, {
+            callback: function (result) {
+                setMessage(result ? "You request has been processed! Please check your mailbox." : "Internal error.");
+            },
+            timeout: 30000,
+            errorHandler:function(message) {
+                setMessage("Oops: " + message);
+            }
+        });
+        function setMessage(text) {
+            var span = document.getElementById("formContainer");
+            span.style.display = "block";
+            span.innerHTML = text;
+            document.getElementById('progress').style.display = "none";
+        }
+    }
+    function doBlurOn(el) {
+        if (el.value == '') {
+            el.value = 'Email RubyMine news to me';
+            el.style.color = '#bcbcbc';
+        }
+    }
+    function doFocusOn(el) {
+        /*alert("ss");*/
+        if (el.value == 'Email RubyMine news to me') {
+            el.value = '';
+            el.style.color = '#333';
+        }
+    }
+</script>
+<dl id="submitionContent" class="subcription">
+    
+    <dd id="formContainer">
+        <form action="javascript:get();" name="sForm" id="sForm">
+            <input class="text required" name="emaiForSubscription" id="emaiForSubscription" value="Email RubyMine news to me" onblur="doBlurOn(this)" onfocus="doFocusOn(this)"/>
+            <input type="submit" class="submit" id="button" value="Subscribe" onclick="Proceed();"/>
+            <span class="msg" id="error-msg" style="display:none;">Incorrect e-mail address</span>
+        </form>
+    </dd>
+    <dd id="progress" style="display:none;"></dd>
+</dl>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sForm').submit(function() {
+            var mail = $('#emaiForSubscription').val();
+            if (mail) {
+                var mktoData = {};
+                mktoData[MKTO_SOURCE_FIELD] = 'email-subscription';
+                mktoDoAsync(mail, mktoData);
+            }
+            return false;
+        });
+    });
+</script>
+</p>
+        <br/>
+        <hr/>
+        <br/>
+        <div class="block45 leftfloated">
+            <div class="block75 jbIDE nobackgr">
+                <h6>Use other programming languages?</h6>
+                <ul>
+                    <li><a href="../../webide/index.html#java"><img src="../../img/logos/ideJava.png" alt="Java"></a></li>
+                    <li><a href="../../webide/index.html#php"><img src="../../img/logos/idePhp.png" alt="PHP"></a></li>
+                    <li><a href="../../webide/index.html#js"><img src="../../img/logos/ideJs.png" alt="Javascript"></a></li>
+                    <li><a href="../../webide/index.html#python"><img src="../../img/logos/idePython.png" alt="Python"></a></li>
+                </ul>
+                <p>- Check <a href="../../webide/" title="JetBrains IDEs for your language">JetBrains IDEs for your language</a>!</p>
+            </div>
+        </div>
+        <div class="leftfloated block45 yt">
+            <h6>Try JetBrains Teamware Tools!</h6>
+            <p>Take a look at our <strong>keyboard-centric</strong><br/><a href="../../youtrack/" id="vn14" title="bug tracker - YouTrack">bug tracker - YouTrack</a>.</p>
+        </div>
+        <br/>
+</cache:cache>
+<!-- Google Code for RubyMine Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1071903267;
+var google_conversion_language = "en";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "bcRWCOjs3gEQo-SP_wM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071903267/?value=0&label=bcRWCOjs3gEQo-SP_wM&guid=ON&script=0"/>
+</div>
+</noscript>
+
+                                </div>
+        <aside>
+                    </aside>
+        <br class="clr"/>
+    </div>
+</div>
+
+
+<div class="footer-main-emulator"></div>
+<footer class="footer-main">
+     <div class="container footer-long">
+        <div class="leftfloated block30 products">
+        <div class="block75">
+            <h3>all products</h3>
+            <ul>
+                <li><a href="/idea/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: IntelliJ IDEA']);">IntelliJ IDEA</a></li>
+                <li><a href="/resharper/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: ReSharper']);">ReSharper</a></li>
+                <li><a href="/webstorm/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: WebStorm']);">WebStorm</a></li>
+                <li><a href="/phpstorm/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: PhpStorm']);">PhpStorm</a></li>
+                <li><a href="/pycharm/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: PyCharm']);">PyCharm</a></li>
+                <li><a href="/ruby/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: RubyMine']);">RubyMine</a></li>
+                <li><a href="/objc/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: AppCode']);">AppCode</a></li>
+                <li><a href="/youtrack/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: YouTrack']);">YouTrack</a></li>
+                <li><a href="/teamcity/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: TeamCity']);">TeamCity</a></li>
+                <li><a href="/profiler/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: dotTrace']);">dotTrace</a></li>
+                <li><a href="/dotcover/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: dotCover']);">dotCover</a></li>
+                <li><a href="/dotpeek/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: dotPeek']);">dotPeek</a></li>
+                <li><a href="/mps/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: MPS']);">MPS</a></li>
+                <li><a href="/kotlin/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: Kotlin']);">Kotlin</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="leftfloated block20">
+            <h3>resources</h3>
+            <ul>
+                <li><a href="/devnet/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: Developer Community']);">Developer Community</a></li>
+                <li><a href="/support/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: Support']);">Support</a></li>
+                <li><a href="http://tv.jetbrains.net/" onclick="_gaq.push(['_trackEvent', 'Click Buttons', 'External', 'Site Footer :: JetBrains TV']);">JetBrains TV</a></li>
+                <li><a href="http://blogs.jetbrains.com/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'External', 'Site Footer :: Blogs']);">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="leftfloated block20">
+            <h3>company</h3>
+            <ul>
+                <li><a href="/company/contacts/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: Contact Us']);">Contact Us</a></li>
+                <li><a href="/partners/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: Partners']);">Partners</a></li>
+                <li><a href="/company/customers/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: Customer List']);">Customer List</a></li>
+                <li><a href="/company/customers/testimonials.html" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: Testimonials']);">Testimonials</a></li>
+                <li><a href="/company/jobs/" onclick="_gaq.push(['_trackEvent', 'Follow links', 'Internal', 'Site Footer :: Jobs']);">Jobs</a></li>
+            </ul>
+        </div>
+        <div class="rightfloated block25 contacts_sub">
+            <ul class="social">
+                <li class="facebook"><a href="http://www.facebook.com/JetBrains" onclick="_gaq.push(['_trackEvent', 'Click Buttons', 'External', 'Site Footer :: Facebook']);">Facebook</a></li>
+                <li class="gPlus"><a href="https://plus.google.com/+jetbrains/" onclick="_gaq.push(['_trackEvent', 'Click Buttons', 'External', 'Site Footer :: Google+']);">Google+</a></li>
+                <li class="in"><a href="http://www.linkedin.com/company/jetbrains" onclick="_gaq.push(['_trackEvent', 'Click Buttons', 'External', 'Site Footer :: LinkedIn']);">LinkedIn</a></li>
+                <li class="twitter"><a href="http://twitter.com/#!/jetbrains" onclick="_gaq.push(['_trackEvent', 'Click Buttons', 'External', 'Site Footer :: Twitter']);">Twitter</a></li>
+                <li class="rss"><a href="/rss.xml" onclick="_gaq.push(['_trackEvent', 'Click Buttons', 'Internal', 'Site Footer :: RSS']);">JetBrains RSS</a></li>
+            </ul>
+            <br class="clr"/>
+                        <div class="newsletter-block">
+                <h6>Get Monthly Newsletter</h6>
+                
+
+<script type='text/javascript' src='/eforms/dwr/interface/SubscriptionService.js'></script>
+<script type='text/javascript' src='/eforms/dwr/engine.js'></script>
+<script type="text/javascript">
+    function trim(str) {
+        return str.replace(/^\s+|\s+$/g, '');
+    }
+    function errMsg(state) {
+        var msg = document.getElementById('error-msg');
+        if (state)msg.style.display = 'block';
+        else msg.style.display = 'none';
+    }
+    function validateEmail(valfield) {
+        var tfld = trim(valfield.value);
+        var email = /^[^@]+@[^@.]+\.[^@]*\w\w$/  ;
+        if (!email.test(tfld)) {
+            errMsg(true);
+            return false;
+        }
+        errMsg(false);
+        return true;
+    }
+    function Proceed() {
+        var el = document.getElementById('emaiForSubscription');
+        if (!validateEmail(el)) {
+            el.focus();
+            return;
+        }
+        document.getElementById('sForm').style.display = "none";
+        document.getElementById('progress').style.display = "block";
+        var request = {
+            email: document.getElementById('emaiForSubscription').value,
+            topic: "jb.community.newsletter"
+        };
+        SubscriptionService.submitSubscriptionRequest(request, {
+            callback: function (result) {
+                setMessage(result ? "You request has been processed! Please check your mailbox." : "Internal error.");
+            },
+            timeout: 30000,
+            errorHandler:function(message) {
+                setMessage("Oops: " + message);
+            }
+        });
+        function setMessage(text) {
+            var span = document.getElementById("formContainer");
+            span.style.display = "block";
+            span.innerHTML = text;
+            document.getElementById('progress').style.display = "none";
+        }
+    }
+    function doBlurOn(el) {
+        if (el.value == '') {
+            el.value = 'E-mail JetBrains news to me';
+            el.style.color = '#bcbcbc';
+        }
+    }
+    function doFocusOn(el) {
+        if (el.value == 'E-mail JetBrains news to me') {
+            el.value = '';
+            el.style.color = '#333';
+        }
+    }
+</script>
+<dl id="submitionContent" class="newsletter">
+    <dd id="formContainer">
+        <form action="javascript:get();" name="sForm" id="sForm">
+            <input class="text required" name="emaiForSubscription" id="emaiForSubscription" value="E-mail JetBrains news to me" onblur="doBlurOn(this)" onfocus="doFocusOn(this)"/>
+            <input type="submit" class="submit" id="button" value="Subscribe" onclick="Proceed();"/>
+            <span class="msg" id="error-msg" style="display:none;">Incorrect e-mail address</span>
+        </form>
+    </dd>
+    <dd id="progress" style="display:none;"></dd>
+</dl>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sForm').submit(function() {
+            var mail = $('#emaiForSubscription').val();
+            if (mail) {
+                var mktoData = {};
+                mktoData[MKTO_SOURCE_FIELD] = 'email-subscription';
+                mktoDoAsync(mail, mktoData);
+            }
+            return false;
+        });
+    });
+</script>
+
+                <br class="clr"/>
+            </div>
+                        <h6 class="contacts">Contacts:</h6>
+            <ul>
+                <li><a href="/company/contacts/">Sales Team</a></li>
+                <li><a href="mailto:marketing@jetbrains.com">Marketing Team</a></li>
+                <li><a href="mailto:webmaster@jetbrains.com">Webmaster</a></li>
+            </ul>
+        </div>
+        <br class="clr"/>
+    </div>
+    <div class="container footer-short">
+        <p class="rightfloated gray right-align">&copy; 2000-2014 JetBrains. All rights reserved<br/>Developed with <a href="/webstorm">WebStorm</a></p>
+        <ul class="block35">
+            <li><a href="/company/privacy.html">Privacy Policy</a></li>
+            <li><a href="/company/useterms.html">Terms of Use</a></li>
+            <li><a href="/map.html">Site map</a></li>
+        </ul>
+        <br class="clr"/>
+    </div>
+</footer>                                                                                                                                            <script type="text/javascript" src="/js2/search.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter16823155 = new Ya.Metrika({id:16823155, enableAll: true, webvisor:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/16823155" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/6939.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script><script type="text/javascript">
+(function() {
+  var didInit = false;
+    function initMunchkin() {
+        if(didInit === false) {
+            didInit = true;
+            Munchkin.init('426-QVD-114');
+        }
+    }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = document.location.protocol + '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script></body>
+</html>

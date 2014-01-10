@@ -1,0 +1,21 @@
+class {'apt':}
+
+class {'install':
+    ubuntu => <%= config[:system][:codename] %>,
+    user   => '<%= settings['user'] %>',
+    group  => '<%= settings['group'] %>',
+}
+
+class {'install::handbrake':}
+package {'audacity':}
+package {'vlc':}
+package {'smplayer':}
+package {'wine':}
+package {'kget':}
+package {'ktorrent':}
+package {'amarok': ensure => absent}
+
+class {'install::plex_media_server':
+    library_dir       => '<%= settings['plex_library_dir'] %>',
+    distribution_path => <%= config[:plex_media_server][:distribution_path] %>,
+}

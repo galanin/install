@@ -1,0 +1,4 @@
+class install::fonts {
+
+
+}

@@ -1,0 +1,56 @@
+class {'apt':}
+
+class {'install':
+  ubuntu => <%= config[:system][:codename] %>,
+  user   => '<%= settings['user'] %>',
+  group  => '<%= settings['group'] %>',
+}
+
+class {'install::google_chrome':}
+
+class {'install::opera':}
+
+class {'install::virtualbox':
+  version => <%= config[:virtualbox][:version] %>,
+  virtualbox_vms_dir => '<%= settings['virtualbox_vms_dir'] %>',
+  extpack_path => <%= config[:virtualbox][:extpack_path] %>,
+}
+
+class {'install::oracle_java':
+  distribution_path => <%= config[:oracle_jdk][:distribution_path] %>,
+  distribution_name => <%= config[:oracle_jdk][:distribution_name] %>,
+}
+
+package {'imagemagick':}
+package {'yakuake':}
+package {'krename':}
+package {'kdiff3':}
+package {'kompare':}
+package {'md5deep':}
+package {'unrar':}
+package {'krusader':}
+package {'gimp':}
+package {'firefox':}
+
+package {'skype':
+  source => <%= config[:skype][:distribution_path] %>,
+  provider => 'dpkg',
+}
+
+package {'ttf-mscorefonts-installer':}
+package {'ttf-dejavu':}
+install::component::font {'Anonymous-Pro':}
+install::component::font {'Cousine':}
+install::component::font {'Droid-Sans-Mono':}
+install::component::font {'Inconsolata-LGC':}
+install::component::font {'Liberation-Mono':}
+install::component::font {'Not-Courier-Sans':}
+install::component::font {'Source-Code-Pro':}
+
+class {'install::rsnapshot':
+  snapshots_dir => '<%= settings['backup_snapshots_dir'] %>',
+}
+
+class {'install::nepomuk':}
+
+class {'install::fstrim':}

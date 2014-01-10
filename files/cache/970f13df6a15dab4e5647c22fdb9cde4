@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title data-template="Plex - ?">Plex - Downloads</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1150">
+        
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="/assets/touch-879034c9f0ecf9bf3b1edc2929fa18b6.png" rel="apple-touch-icon-precomposed">
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="RYGSmkD+DtVF7+Wy23U6MXk0F4R3PYSFxYNw7p/XOzQ=" name="csrf-token" />
+    <link href="/assets/unified-9d5a2ba6fd57605b3039482296d9d02f.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/assets/unified-e214195a835aff97ff3407cf23ae3658.js" type="text/javascript"></script>
+    
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    
+    
+  <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script></head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="block header blog">
+      <div class="container x-large">
+        <div class="col col-2 left">
+          <a href="/" class="logo"></a>
+        </div>
+        <div class="col col-10 left">
+          <ul id="nav">
+            <li><a href="/features">Features</a></li>
+            <li><a href="/downloads">Downloads</a></li>
+            <li><a href="https://plexapp.zendesk.com/hc/en-us">Support</a></li>
+            <li><a href="http://blog.plex.tv">Blog</a></li>
+          </ul>
+          <ul id="sub-nav">
+              <li><a href="/users/sign_up" class="btn">Sign up</a></li>
+              <li><a href="/users/sign_in">Sign in</a></li>
+              <li><a href="/subscription/about">Go Premium</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+      
+<script type="text/javascript">
+function pageSpecificOnReady() {
+	if (navigator.platform.toUpperCase().indexOf('MAC') !== -1) {
+		$('#pms-desktop .tabs').data('selectedTab', '[href="#tabs-2"]');
+		$('#plex-pht .tabs').data('selectedTab', '[href="#tabs-16"]');
+	} else if (navigator.platform.toUpperCase().indexOf('WIN') !== -1) {
+		$('#pms-desktop .tabs').data('selectedTab', '[href="#tabs-1"]');
+		$('#plex-pht .tabs').data('selectedTab', '[href="#tabs-15"]');
+	} else if (navigator.platform.toUpperCase().indexOf('LINUX') !== -1) {
+		$('#pms-desktop .tabs').data('selectedTab', '[href="#tabs-3"]');
+	}
+}
+</script>
+
+        <div class="block downloads">
+        	<div class="container medium pad sixty">
+	        	<h2><b>Plex</b> downloads</h2>
+	        	<p class="sub-head">
+              Getting Plex on all your devices is easy.
+            </p>
+	        	
+	        	<ul class="single">
+	        		<li>
+	        			<div class="pms-icon"></div>
+			        	<div class="copy">
+			        		<h3>Plex Media Server</h3>
+							<p>The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and<br/>streaming it to all of your devices. It's easy to use, it's awesome, and it's free!</p>
+							<a class="various btn hub btn-left" href="#pms-desktop">Computer</a><a class="various btn hub btn-right" href="#pms-nas">NAS</a>
+			        	</div>
+	        		</li>
+	        	</ul>
+	        	
+	        	<ul>
+	        		<li>
+			        	<div class="download one"></div>
+			        	<h3>Plex Mobile Apps</h3>
+			        	<p>Get instant access to all your media wherever you are. Plex apps for iOS, Android, Windows Phone 8, and Windows 8 let you browse and enjoy on your device of choice.</p>
+						<a class="various btn" href="#plex-apps">Download</a>
+		        	</li>
+		        	<li class="center">
+			        	<div class="download three"></div>
+			        	<h3>Plex for connected TVs and streaming devices</h3>
+			        	<p>Turn your living room into a home theater by adding Plex to your connected TV or streaming box of choice. Chromecast, Roku, Google TV, smart TVs, and other devices stream from Plex Media Server with ease.</p>
+						<a href="#plex-ctvsd" class="various btn">Download</a>
+		        	</li>
+		        	<li>
+			        	<div class="download four"></div>
+			        	<h3>Plex Home Theater</h3>
+			        	<p>For the ultimate experience, install Plex Home Theater on a dedicated computer for your TV. It's optimized for the big screen and supports a wide variety of formats with high-definition audio, native framerates, and more.</p>
+						<a href="#plex-pht" class="various btn">Download</a>
+		        	</li>
+	        	</ul>
+        	</div>
+        </div>
+        
+        <!-- PMS Desktops -->
+        
+        <div id="pms-desktop" class="pop">
+			<div class="tabs">
+				<ul class="tubs">
+					<li><a href="#tabs-1" title=""><span class="tabby icon-windows"></span>Windows</a></li>
+					<li><a href="#tabs-2" title=""><span class="tabby icon-apple"></span>Mac</a></li>
+					<li><a href="#tabs-3" title=""><span class="tabby icon-tux"></span>Linux</a></li>
+					<li><a href="#tabs-4" title=""><span class="tabby icon-freebsd"></span>FreeBSD</a></li>
+				</ul>
+				<div class="tabs_container">
+					
+					<div id="tabs-1" class="tab-content">
+						<h1>Plex Media Server for Windows</h1>
+						<p>It’s the brains behind the operation, and you will need it<br/>to connect all your personal media to any of your devices.</p>
+						<div class="brand">
+							<span class="ico icon-windows"></span>
+							<b>Windows</b> Download
+							<span class="sm">Windows XP SP3 or later<br/>Version 0.9.8.18.290-11b7fdd</span>
+						</div>
+						<a class="btn btn-left" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/Plex-Media-Server-0.9.818.290-11b7fdd-en-US.exe">Download English</a>
+            <a class="btn btn-right" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/Plex-Media-Server-0.9.818.290-11b7fdd-ko-KR.exe">Download Korean</a>
+					</div>
+					<div id="tabs-2" class="tab-content">
+						<h1>Plex Media Server for Mac</h1>
+						<p>It’s the brains behind the operation, and you will need it<br/>to connect all your personal media to any of your devices.</p>
+						<div class="brand">
+							<span class="ico icon-apple"></span>
+							<b>Mac</b> Download
+							<span class="sm">Version 0.9.8.18.290-11b7fdd</span>
+						</div>
+						<div class="req">
+							<b>Requirements</b><br/>
+							Mac OS X 10.6 Snow Leopard or higher.<br/>
+							A Mac with Intel Core 2 Duo processor or better.<br/>
+							At least 1GB of RAM (2GB recommended).<br/>
+						</div>
+						<a class="btn" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer-0.9.8.18.290-11b7fdd-OSX.zip">Download</a>
+					</div>
+					<div id="tabs-3" class="tab-content">
+						<h1>Plex Media Server for Linux</h1>
+						<p>It’s the brains behind the operation, and you will need it<br/>to connect all your personal media to any of your devices.</p>
+            <br/>
+						<ul>
+							<li>
+								<span class="linux ubuntu"></span>
+								<h3>Ubuntu<h3>
+								<p>
+                  Ubuntu 10.04 (lucid) or newer<br/>
+                  Version 0.9.8.18.290-11b7fdd
+                </p>
+								<a class="btn btn-left" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver_0.9.8.18.290-11b7fdd_amd64.deb">64-bit</a>
+                <a class="btn btn-right" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver_0.9.8.18.290-11b7fdd_i386.deb">32-bit</a>
+							</li>
+							<li>
+								<span class="linux fedora"></span>
+								<h3>Fedora<h3>
+								<p>
+                  RPM for Fedora 14 or newer<br/>
+                  Version 0.9.8.18.290-11b7fdd
+                </p>
+								<a class="btn btn-left" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver-0.9.8.18.290-11b7fdd.x86_64.rpm">64-bit</a>
+                <a class="btn btn-right" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver-0.9.8.18.290-11b7fdd.i386.rpm">32-bit</a>
+							</li>
+							<li class="last">
+								<span class="linux centos"></span>
+								<h3>CentOS<h3>
+								<p>
+                  RPM for CentOS 6 or newer<br/>
+                  Version 0.9.8.18.290-11b7fdd
+                </p>
+								<a class="btn btn-left" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver-0.9.8.18.290-11b7fdd.x86_64.rpm">64-bit</a>
+                <a class="btn btn-right" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver-0.9.8.18.290-11b7fdd.i386.rpm">32-bit</a>
+							</li>
+						</ul>
+					</div>
+					<div id="tabs-4" class="tab-content">
+						<h1>Plex Media Server for FreeBSD</h1>
+						<p>It’s the brains behind the operation, and you will need it<br/>to connect all your personal media to any of your devices.</p>
+						<div class="brand">
+							<span class="ico icon-freebsd"></span>
+							<b>FreeBSD</b>Download
+							<span class="sm">
+                FreeBSD 9.1<br/>
+                Version 0.9.8.18.290-11b7fdd
+              </span>
+						</div>
+						<a class="btn" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer-0.9.8.18.290-11b7fdd-freebsd-amd64.tar.bz2">Download 64-bit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- PMS NAS -->
+    
+		<div id="pms-nas" class="pop">
+			<div class="tabs">
+				<ul class="tubs">
+					<li><a href="#tabs-5" title=""><span class="nas-logos icon-synology"></span></a></li>
+					<li><a href="#tabs-6" title=""><span class="nas-logos icon-netgear"></span></a></li>
+					<li><a href="#tabs-7" title=""><span class="nas-logos icon-qnap"></span></a></li>
+					<li><a href="#tabs-8" title=""><span class="nas-logos icon-unraid"></span></a></li>
+					<li><a href="#tabs-9" title=""><span class="nas-logos icon-drobo"></span></a></li>
+					<li><a href="#tabs-10" title=""><span class="nas-logos icon-asustor"></span></a></li>
+				</ul>
+				<div class="tabs_container">
+
+					<div id="tabs-5" class="tab-content">
+						<h1>Plex Media Server for Synology</h1>
+              		<p>
+        It’s the brains behind the operation, and you will need it<br/>
+        to connect all your personal media to any of your devices.<br/><br/>
+        Many NAS devices have important limitations.<br/>
+        Please read
+        <a href="https://plexapp.zendesk.com/hc/en-us/articles/201373823">
+          this article
+        </a>
+        to learn more.
+      </p>
+
+						<div class="brand">
+							<span class="ico-nas icon-synology"></span>
+							<span class="sm">
+                Package for Synology<br/>
+                Version 0.9.8.18.290-11b7fdd
+              </span>
+						</div>
+						<a class="btn btn-left" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer-0.9.8.18.290-11b7fdd-x86.spk">Intel</a>
+            <a class="btn btn-center" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer-0.9.8.18.290-11b7fdd-arm.spk">ARM</a>
+            <a class="btn btn-right" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer-0.9.8.18.290-11b7fdd-ppc_qoriq.spk">PowerPC</a>
+					</div>
+
+					<div id="tabs-6" class="tab-content">
+						<h1>Plex Media Server for Netgear</h1>
+						  		<p>
+        It’s the brains behind the operation, and you will need it<br/>
+        to connect all your personal media to any of your devices.<br/><br/>
+        Many NAS devices have important limitations.<br/>
+        Please read
+        <a href="https://plexapp.zendesk.com/hc/en-us/articles/201373823">
+          this article
+        </a>
+        to learn more.
+      </p>
+
+						<div class="brand">
+							<span class="ico-nas icon-netgear"></span>
+							<span class="sm">
+                Package for Netgear<br/>
+                Version 0.9.8.18.290-11b7fdd
+              </span>
+						</div>
+            <a class="btn btn-left" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer-0.9.8.18.290-11b7fdd-i686.bin">Intel 4.x</a>
+            <a class="btn btn-center" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer-0.9.8.18.290-11b7fdd-arm.bin">ARM 5.x</a>
+            <a class="btn btn-right" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver-ros6-binaries_0.9.8.18.290-11b7fdd_amd64.deb">Intel 6.x</a>
+					</div>
+					
+					<div id="tabs-7" class="tab-content">
+						<h1>Plex Media Server for QNAP</h1>
+						  		<p>
+        It’s the brains behind the operation, and you will need it<br/>
+        to connect all your personal media to any of your devices.<br/><br/>
+        Many NAS devices have important limitations.<br/>
+        Please read
+        <a href="https://plexapp.zendesk.com/hc/en-us/articles/201373823">
+          this article
+        </a>
+        to learn more.
+      </p>
+
+						<div class="brand">
+							<span class="ico-nas icon-qnap"></span>
+							<span class="sm">
+                Package for QNAP<br/>
+                Version 0.9.8.18.290-11b7fdd
+              </span>
+						</div>
+						<a class="btn" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer_0.9.8.18.290-11b7fdd_x86.qpkg">Download</a>
+					</div>
+					
+					<div id="tabs-8" class="tab-content">
+						<h1>Plex Media Server for unRAID</h1>
+						  		<p>
+        It’s the brains behind the operation, and you will need it<br/>
+        to connect all your personal media to any of your devices.<br/><br/>
+        Many NAS devices have important limitations.<br/>
+        Please read
+        <a href="https://plexapp.zendesk.com/hc/en-us/articles/201373823">
+          this article
+        </a>
+        to learn more.
+      </p>
+
+						<div class="brand">
+							<span class="ico-nas icon-unraid"></span>
+							<span class="sm">Package for unRAID.<br/>
+                Version 0.9.8.18.290-11b7fdd
+              </span>
+						</div>
+						<a class="btn" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/PlexMediaServer-0.9.8.18.290-11b7fdd-unRAID.txz">Download</a>
+					</div>
+					
+					<div id="tabs-9" class="tab-content">
+						<h1>Plex Media Server for Drobo</h1>
+						  		<p>
+        It’s the brains behind the operation, and you will need it<br/>
+        to connect all your personal media to any of your devices.<br/><br/>
+        Many NAS devices have important limitations.<br/>
+        Please read
+        <a href="https://plexapp.zendesk.com/hc/en-us/articles/201373823">
+          this article
+        </a>
+        to learn more.
+      </p>
+
+						<div class="brand">
+							<span class="ico-nas icon-drobo"></span>
+							<span class="sm">
+                Package for Drobo 5N<br/>
+                Version 0.9.8.18.290-11b7fdd
+              </span>
+						</div>
+						<a class="btn" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plex.tgz">Download</a>
+					</div>
+										
+					<div id="tabs-10" class="tab-content">
+						<h1>Plex Media Server for ASUSTOR</h1>
+						  		<p>
+        It’s the brains behind the operation, and you will need it<br/>
+        to connect all your personal media to any of your devices.<br/><br/>
+        Many NAS devices have important limitations.<br/>
+        Please read
+        <a href="https://plexapp.zendesk.com/hc/en-us/articles/201373823">
+          this article
+        </a>
+        to learn more.
+      </p>
+
+						<div class="brand">
+							<span class="ico-nas icon-asustor"></span>
+							<span class="sm">
+                Package for ASUSTOR.<br/>
+                Version 0.9.8.18.290-11b7fdd
+              </span>
+						</div>
+						<a class="btn btn-left" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver_0.9.8.18.290-11b7fdd_x86-64.apk">Intel 64-bit</a>
+            <a class="btn btn-right" href="http://downloads.plexapp.com/plex-media-server/0.9.8.18.290-11b7fdd/plexmediaserver_0.9.8.18.290-11b7fdd_i386.apk">Intel 32-bit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Plex Apps -->
+		
+		<div id="plex-apps" class="pop">
+			<div class="tabs">
+				<ul class="tubs">
+					<li><a href="#tabs-11" title=""><span class="tabby icon-android"></span>Android</a></li>
+					<li><a href="#tabs-12" title=""><span class="tabby icon-apple"></span>iOS</a></li>
+					<li><a href="#tabs-13" title=""><span class="tabby icon-windows"></span>Windows</a></li>
+				</ul>
+				<div class="tabs_container">
+					
+					<div id="tabs-11" class="tab-content">
+						<h1>Plex for Android <span class="icon-android"></span></h1>
+						<p>Your Plex mobile app, combined with the free Plex Media Server, allows you to stream all your personal media directly to your mobile device. In addition to enjoying all your media on the go, you can also use your mobile device to control video being played on your Plex-enabled, or Chromecast-enabled, big screen. Stop watching in your living room and continue right where you left off on your Android device.</p>
+              <a class="btn btn-left" target="_blank" href="https://play.google.com/store/apps/details?id=com.plexapp.android">Google Play Store</a>
+              <a class="btn btn-center" target="_blank" href="http://www.amazon.com/Plex-Inc-for-Android/dp/B004Y1WCDE">Amazon Appstore</a><a class="btn btn-right" target="_blank" href="https://www.ouya.tv/game/Plex/">OUYA Games</a>
+					</div>
+					
+					<div id="tabs-12" class="tab-content">
+						<h1>Plex for iOS <span class="icon-apple"></span></h1>
+						<p>Your Plex mobile app, combined with the free Plex Media Server, allows you to stream all your personal media directly to your mobile device. In addition to enjoying all your media on the go, you can also use your mobile device to control video being played on your Plex-enabled, or Chromecast-enabled, big screen. Stop watching in your living room and continue right where you left off on your iOS device.</p>
+						<a class="btn" target="_blank" href="https://itunes.apple.com/us/app/plex/id383457673?mt=8">Available on the App Store</a>
+					</div>
+					
+					<div id="tabs-13" class="tab-content">
+						<h1>Plex app for Windows <span class="icon-windows-mobile"></span><span class="icon-windows"></span></h1>
+						<p>Your Plex mobile app, combined with the free Plex Media Server, allows you to stream all your personal media directly to your mobile device. In addition to enjoying all your media on the go, you can also use your mobile device to control video being played on your Plex-enabled big screen. Stop watching in your living room and continue right where you left off on your Windows Phone 8 or Windows 8 device.</p>
+						<a class="btn btn-left" target="_blank" href="http://www.windowsphone.com/en-us/store/app/plex/4854f786-ea4b-4db0-b67a-4645c04225d4">Windows Phone 8</a><a class="btn btn-right" target="_blank" href="http://apps.microsoft.com/windows/en-us/app/647bfcf7-7f87-4a72-ad86-2e6274f969e3">Windows 8</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!-- Plex Home Theater -->
+		
+		<div id="plex-pht" class="pop">
+			<div class="tabs">
+				<ul class="tubs">
+					<li><a href="#tabs-15" title=""><span class="tabby icon-windows8"></span>Windows</a></li>
+					<li><a href="#tabs-16" title=""><span class="tabby icon-apple"></span>Mac</a></li>
+				</ul>
+				<div class="tabs_container">
+										
+					<div id="tabs-15" class="tab-content">
+						<h1>Plex Home Theater for Windows</h1>
+						<p>For those of you with a dedicated computer for your TV, Plex Home Theater celebrates your personal videos, music and photos and gives them the stage they deserve. Simply download Plex Home Theater on your dedicated computer and the free Plex Media Server on your home computer then sit back and enjoy.</p>
+						<div class="brand">
+							<span class="ico icon-windows8"></span>
+							<b>Windows</b> Download
+							<span class="sm">
+                                Windows Vista or later.<br/>
+                                Version 1.0.7.169-303ab8cc
+                            </span>
+						</div>
+						<a class="btn" href="http://downloads.plexapp.com/plex-home-theater/1.0.7.169-303ab8cc/PlexHomeTheater-1.0.7.169-303ab8cc-windows-x86.exe">Download</a>
+					</div>
+					
+					<div id="tabs-16" class="tab-content">
+						<h1>Plex Home Theater for Mac</h1>
+						<p>For those of you with a dedicated computer for your TV, Plex Home Theater celebrates your personal videos, music and photos and gives them the stage they deserve. Simply download Plex Home Theater on your dedicated computer and the free Plex Media Server on your home computer then sit back and enjoy.</p>
+						<div class="brand">
+							<span class="ico icon-apple"></span>
+							<b>Mac</b> Download
+							<span class="sm">
+                                Snow Leopard or newer.<br/>
+                                Version 1.0.7.169-303ab8cc
+                            </span>
+						</div>
+						<a class="btn btn-left" href="http://downloads.plexapp.com/plex-home-theater/1.0.7.169-303ab8cc/PlexHomeTheater-1.0.7.169-303ab8cc-macosx-i386.zip">Download 32-bit</a>
+            <a class="btn btn-right" href="http://downloads.plexapp.com/plex-home-theater/1.0.7.169-303ab8cc/PlexHomeTheater-1.0.7.169-303ab8cc-macosx-x86_64.zip">Download 64-bit</a>
+						<span class="sub">Source for 1.0.7.169-303ab8cc is available at <a href="https://github.com/plexinc/plex-home-theater-public">github</a>.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+		<!-- Connected Devices -->
+		
+		<div id="plex-ctvsd" class="pop">
+			<div class="tabs">
+				<ul class="tubs">
+					<li><a href="#tabs-17" title=""><span class="tabby icon-chrome"></span>Chromecast</a></li>
+					<li><a href="#tabs-18" title=""><span class="tabby lrg icon-roku"></span>Roku</a></li>
+					<li><a href="#tabs-19" title=""><span class="tabby icon-google-tv"></span>GoogleTV</a></li>
+					<li><a href="#tabs-20" title=""><span class="tabby lrg icon-samsung"></span>Samsung</a></li>
+				</ul>
+				<div class="tabs_container">
+
+					<div id="tabs-17" class="tab-content">
+						<h1>Plex for Chromecast (for Plex Pass members)</h1>
+						<p>Now you can cast all your personal videos directly to your Chromecast-enabled TV. Simply download the free Plex Media Server on your home computer and mobile device and give your media the big screen it deserves.</p>
+						<div class="brand">
+							<span class="ico icon-chrome"></span>
+							<b>Chromecast</b>
+						</div>
+					</div>
+				
+					<div id="tabs-18" class="tab-content">
+						<h1>Plex for Roku</h1>
+						<p>Extend the functionality of your Roku to stream all your personal videos, photos and music directly to your TV. Simply download the Plex app on your Roku and the free Plex Media Server on your home computer and give your media the big screen it deserves.</p>
+						<div class="brand">
+							<span class="ico icon-roku"></span>
+						</div>
+						<a class="btn" target="_blank" href="http://www.roku.com/channels/#!details/13535/plex">Get the app</a>
+					</div>
+				
+					<div id="tabs-19" class="tab-content">
+						<h1>Plex for Google TV</h1>
+						<p>Extend the functionality of your Google TV to stream all your personal videos, photos and music directly to your TV. Simply download the Plex app on your Google TV and the free Plex Media Server on your home computer and give your media the big screen it deserves.</p>
+						<div class="brand">
+							<span class="ico icon-google-tv"></span>
+						</div>
+						  <a class="btn" target="_blank" href="https://play.google.com/store/apps/details?id=com.plexapp.gtv">Google Play Store</a>
+					</div>
+					
+					<div id="tabs-20" class="tab-content">
+						<h1>Plex for Samsung</h1>
+						<p>Start streaming all your personal videos, photos and music directly to your Samsung Smart TV. Download the Plex app in the Samsung Apps Store on compatible Samsung Smart TVs and the free Plex Media Server on your home computer and give your media the big screen it deserves.</p>
+						<div class="brand">
+							<span class="ico icon-samsung"></span>
+						</div>
+						<a class="btn" target="_blank" href="http://www.samsung.com/us/appstore/app/G00002687241#">Samsung Apps Store</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+    <div class="block footer">
+      <div class="container medium pad sixty">
+        <div class="col col-3">
+          <div class="logo footer"></div>
+        </div>
+        <div class="col col-3">
+          <h4>About Us</h4>
+          <li><a href="/about">Team</a></li>
+          <li><a href="/features">Features</a></li>
+          <li><a href="/downloads">Downloads</a></li>
+          <li><a href="/legal">Privacy &amp; Legal</a></li>
+        </div>
+        <div class="col col-3">
+          <h4>Connect with Us</h4>
+          <li><a href="https://plexapp.zendesk.com/hc/en-us">Support</a></li>
+          <li><a href="http://blog.plex.tv">Blog</a></li>
+          <li><a href="https://forums.plexapp.com">Forums</a></li>
+          <li><a href="https://dev.plexapp.com">Developers</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </div>
+        <div class="col col-3 social">
+          <li class="twitter"><a target="_blank" href="https://www.twitter.com/plexapp"><span class="icon-twitter"></span></a></li>
+          <li class="facebook"><a target="_blank" href="https://facebook.com/plexapp"><span class="icon-facebook"></span></a></li>
+          <li class="google"><a target="_blank" href="https://plus.google.com/+plex"><span class="icon-googleplus"></span></a></li>
+          <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/plex-inc"><span class="icon-linkedin"></span></a></li>
+        </div>
+      </div>
+      <div class="container medium legal">
+        <div class="col col-6">
+        Plex Copyright &copy; 2014
+        </div>
+        <div class="col col-6 right">
+        All Rights Reserved
+        </div>
+      </div>
+    </div>
+    
+  <script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","c520d54786","620944","Jg0LERBeXVRRFxZQDQgHFQQFVB5cWxJXVA0EBhY=",8,456,new Date().getTime(),"","","","",""]);</script></body>
+</html>
