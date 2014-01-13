@@ -5,7 +5,6 @@ class install::fstrim {
     user => 'root',
     minute => '0',
     hour  => '12',
-    weekday => 'Monday',
     target  => 'root',
   }
 
