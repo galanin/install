@@ -14,3 +14,5 @@ configurator = PuppetConfigurator.new("#{TOOL_BASE_DIR}/settings.yml")
 
 configurator.configure_all
 configurator.render_manifest("#{TOOL_BASE_DIR}/common.pp.erb")
+configurator.render_manifest("#{TOOL_BASE_DIR}/home.pp.erb")
+configurator.render_manifest("#{TOOL_BASE_DIR}/work.pp.erb")
