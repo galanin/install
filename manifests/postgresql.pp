@@ -24,4 +24,9 @@ class install::postgresql {
     require => Apt::Source['postgresql'],
   }
 
+  package {'postgresql-server-dev-9.3':
+    ensure =>  present,
+    require => Apt::Source['postgresql'],
+  }
+
 }
