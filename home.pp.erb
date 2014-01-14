@@ -13,7 +13,9 @@ package {'smplayer':}
 package {'wine':}
 package {'kget':}
 package {'ktorrent':}
+package {'mkvtoolnix':}
 package {'amarok': ensure => absent}
+package {'dragonplayer': ensure => absent}
 
 class {'install::plex_media_server':
     library_dir       => '<%= settings['plex_library_dir'] %>',

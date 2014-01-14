@@ -31,6 +31,7 @@ package {'unrar':}
 package {'krusader':}
 package {'gimp':}
 package {'firefox':}
+package {'samba':}
 
 package {'skype':
   source => <%= config[:skype][:distribution_path] %>,
@@ -46,6 +47,7 @@ install::component::font {'Inconsolata-LGC':}
 install::component::font {'Liberation-Mono':}
 install::component::font {'Not-Courier-Sans':}
 install::component::font {'Source-Code-Pro':}
+install::component::font {'Tahoma':}
 
 class {'install::rsnapshot':
   snapshots_dir => '<%= settings['backup_snapshots_dir'] %>',
