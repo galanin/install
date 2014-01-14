@@ -24,6 +24,7 @@ class install::rsnapshot (
     group   => 'root',
     mode    => '0644',
     content => template('install/etc/rsnapshot.conf.erb'),
+    require => Package['rsnapshot'],
   }
   file {"${snapshots_dir}/etc":
     ensure  => directory,
@@ -38,7 +39,7 @@ class install::rsnapshot (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => template('install/etc/rsnapshot.conf.erb'),
+    content => template('install/etc/rsnapshot_work.conf.erb'),
   }
   file {"${snapshots_dir}/work":
     ensure  => directory,
