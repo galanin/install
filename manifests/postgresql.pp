@@ -29,4 +29,6 @@ class install::postgresql {
     require => Apt::Source['postgresql'],
   }
 
+  package {'postgresql-common':}
+
 }
