@@ -24,7 +24,7 @@ config_version	1.2
 
 # All snapshots will be stored under this root directory.
 #
-snapshot_root	<%= @snapshots_dir %>/<%= @user %>
+snapshot_root	<%= @snapshots_dir %>/<%= scope['install::user'] %>/
 
 # If no_create_root is enabled, rsnapshot will not automatically create the
 # snapshot_root directory. This is particularly useful if you are backing
@@ -121,14 +121,14 @@ loglevel	3
 # If you enable this, data will be written to the file you specify. The
 # amount of data written is controlled by the "loglevel" parameter.
 #
-logfile		/home/<%= @user %>/.rsnapshot.log
+logfile		/home/<%= scope['install::user'] %>/.rsnapshot.log
 
 # If enabled, rsnapshot will write a lockfile to prevent two instances
 # from running simultaneously (and messing up the snapshot_root).
 # If you enable this, make sure the lockfile directory is not world
 # writable. Otherwise anyone can prevent the program from running.
 #
-lockfile	/home/<%= @user %>/.rsnapshot.pid
+lockfile	/home/<%= scope['install::user'] %>/.rsnapshot.pid
 
 # By default, rsnapshot check lockfile, check if PID is running
 # and if not, consider lockfile as stale, then start
@@ -227,22 +227,22 @@ use_lazy_deletes	1
 ###############################
 
 # LOCALHOST
-backup	/home/<%= @user %>/.rsnapshot.conf		.
-backup	/home/<%= @user %>/bin/		.
-backup	/home/<%= @user %>/.gitconfig		.
-backup	/home/<%= @user %>/.hgrc		.
-backup	/home/<%= @user %>/.audacity-data/		.
-backup	/home/<%= @user %>/.config/google-chrome/		.
-backup	/home/<%= @user %>/.kde/share/apps/kwallet/		.
-backup	/home/<%= @user %>/.kde/share/apps/ktorrent/		.
-backup	/home/<%= @user %>/.kde/share/config/ktorrentrc		.
-backup	/home/<%= @user %>/.kde/share/config/krusaderrc		.
-backup	/home/<%= @user %>/.kde/share/config/kwinrc		.
-backup	/home/<%= @user %>/.kde/share/config/nepomukserverrc		.
-backup	/home/<%= @user %>/.mozilla/		.
-backup	/home/<%= @user %>/.RubyMine60/config/		.
-backup	/home/<%= @user %>/.Skype/		.
-backup	/home/<%= @user %>/.ssh/		.
+backup	/home/<%= scope['install::user'] %>/.rsnapshot.conf		.
+backup	/home/<%= scope['install::user'] %>/bin/		.
+backup	/home/<%= scope['install::user'] %>/.gitconfig		.
+backup	/home/<%= scope['install::user'] %>/.hgrc		.
+backup	/home/<%= scope['install::user'] %>/.audacity-data/		.
+backup	/home/<%= scope['install::user'] %>/.config/google-chrome/		.
+backup	/home/<%= scope['install::user'] %>/.kde/share/apps/kwallet/		.
+backup	/home/<%= scope['install::user'] %>/.kde/share/apps/ktorrent/		.
+backup	/home/<%= scope['install::user'] %>/.kde/share/config/ktorrentrc		.
+backup	/home/<%= scope['install::user'] %>/.kde/share/config/krusaderrc		.
+backup	/home/<%= scope['install::user'] %>/.kde/share/config/kwinrc		.
+backup	/home/<%= scope['install::user'] %>/.kde/share/config/nepomukserverrc		.
+backup	/home/<%= scope['install::user'] %>/.mozilla/		.
+backup	/home/<%= scope['install::user'] %>/.RubyMine60/config/		.
+backup	/home/<%= scope['install::user'] %>/.Skype/		.
+backup	/home/<%= scope['install::user'] %>/.ssh/		.
 
 #backup	/foo/bar/	localhost/	one_fs=1, rsync_short_args=-urltvpog
 #backup_script	/usr/local/bin/backup_pgsql.sh	localhost/postgres/

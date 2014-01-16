@@ -115,7 +115,7 @@ class install::rsnapshot (
     command => '/usr/bin/rsnapshot -c /etc/rsnapshot_work.conf hourly',
     user    => 'root',
     minute  => '0',
-    hour    => '*/2',
+    hour    => '8-22/2',
     target  => 'root',
   }
 
