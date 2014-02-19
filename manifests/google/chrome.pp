@@ -1,12 +1,13 @@
-class install::google_chrome {
+class install::google::chrome {
+
+  include install::google::key
 
   apt::source {'google-chrome-stable':
     location    => 'http://dl.google.com/linux/chrome/deb/',
     release     => 'stable',
     repos       => 'main',
-    key         => '7FAC5991',
-    key_source  => 'https://dl-ssl.google.com/linux/linux_signing_key.pub',
     include_src => false,
+    require     => Apt::Key['google-linux-signing-key'],
   }
 
   package {'google-chrome-stable':
