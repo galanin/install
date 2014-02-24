@@ -34,6 +34,6 @@ file {'/etc/samba/smb.conf':
     mode    => '0644',
     content => template('install/etc/samba/smb.conf.htpc.erb'),
     require => Package['samba'],
-    notify  => Service['samba'],
+    notify  => Service['smbd'],
 }
 
