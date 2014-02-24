@@ -44,3 +44,10 @@ file {'/etc/samba/smb.conf':
     notify  => Service['smbd'],
 }
 
+package {'avahi-utils':}
+package {'plexmediaserver':
+    ensure   => latest,
+    provider => 'dpkg',
+    source   => '<%= config[:plex_media_server][:distribution_path] %>',
+    require  => Package['avahi-utils'],
+}
