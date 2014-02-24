@@ -1,4 +1,4 @@
-class install::sshd {
+class install::mpd {
 
   package {'mpd':}
 
@@ -18,4 +18,10 @@ class install::sshd {
     notify  => Service['mpd'],
   }
 
+  file {'/var/lib/mpd/music/music6':
+    ensure => '/stuff6/music',
+  }
+  file {'/var/lib/mpd/music/music7':
+    ensure => '/stuff7/music',
+  }
 }

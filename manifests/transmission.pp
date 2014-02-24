@@ -1,4 +1,4 @@
-class install::sshd {
+class install::transmission {
   if ($install::user == undef) {
     fail('install::user parameter must be set')
   }
