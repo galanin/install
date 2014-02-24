@@ -16,3 +16,4 @@ configurator.configure_all
 configurator.render_manifest("#{TOOL_BASE_DIR}/common.pp.erb")
 configurator.render_manifest("#{TOOL_BASE_DIR}/home.pp.erb")
 configurator.render_manifest("#{TOOL_BASE_DIR}/work.pp.erb")
+configurator.render_manifest("#{TOOL_BASE_DIR}/htpc.pp.erb")

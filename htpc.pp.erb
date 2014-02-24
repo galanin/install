@@ -1,0 +1,38 @@
+class {'apt':}
+
+class {'install':
+    ubuntu => <%= config[:system][:codename] %>,
+    user   => '<%= settings['user'] %>',
+    group  => '<%= settings['group'] %>',
+}
+
+package {'unrar':}
+package {'smartmontools':}
+
+exec {'disable_scopes':
+    command => "gsettings set com.canonical.Unity.Lenses disabled-scopes \"['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']\"",
+    user    => $install::user,
+    path    => ['/sbin', '/bin', '/usr/sbin', '/usr/bin'],
+}
+
+class {'install::xbmc':}
+class {'install::sshd':}
+class {'install::mpd':}
+
+
+package {'samba':}
+service { 'smbd':
+    ensure  => 'running',
+    enable  => 'true',
+    require => Package['samba'],
+}
+file {'/etc/samba/smb.conf':
+    ensure  => present,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    content => template('install/etc/samba/smb.conf.htpc.erb'),
+    require => Package['samba'],
+    notify  => Service['samba'],
+}
+
