@@ -20,8 +20,10 @@ class install::mpd {
 
   file {'/var/lib/mpd/music/music6':
     ensure => '/stuff6/music',
+    require => Package['mpd'],
   }
   file {'/var/lib/mpd/music/music7':
     ensure => '/stuff7/music',
+    require => Package['mpd'],
   }
 }
