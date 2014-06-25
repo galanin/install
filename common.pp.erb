@@ -10,6 +10,8 @@ class {'install::google::chrome':}
 
 class {'install::opera':}
 
+class {'install::qutim':}
+
 class {'install::virtualbox':
   version => <%= config[:virtualbox][:version] %>,
   virtualbox_vms_dir => '<%= settings['virtualbox_vms_dir'] %>',
