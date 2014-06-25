@@ -26,3 +26,35 @@ package {'memcached':}
 package {'xclip':}
 package {'kcachegrind':}
 package {'kcachegrind-converters':}
+
+package {'nginx':}
+file {'/etc/nginx/sites-available/fl':
+    ensure  => present,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    content => template('install/etc/nginx/sites-available/fl.erb'),
+    require => Package['nginx'],
+    notify  => Service['nginx'],
+}
+file {'/etc/nginx/sites-available/gp':
+    ensure  => present,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    content => template('install/etc/nginx/sites-available/gp.erb'),
+    require => Package['nginx'],
+    notify  => Service['nginx'],
+}
+
+package {'php-fpm':}
+package {'php-curl':}
+file {'/etc/php5/fpm/pool.d/www.conf':
+    ensure  => present,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    content => template('install/etc/php5/fpm/pool.d/www.conf.erb'),
+    require => Package['php5-fpm'],
+    notify  => Service['php5-fpm'],
+}

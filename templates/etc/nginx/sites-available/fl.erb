@@ -1,0 +1,48 @@
+upstream php_fpm {
+  server unix:/var/run/php5-fpm.sock;
+}
+
+server {
+  listen              8080;
+  server_name         fl.dev;
+  root                /w/fl;
+
+  # remove slash in end url
+  rewrite ^/(.*)/$ /$1 permanent;
+  
+  
+  location ~ ^/(css|images|js)/ {
+    gzip_static       on;
+    expires           max;
+    add_header        Cache-Control public;
+    add_header        Last-Modified "";
+    add_header        ETag "";
+
+    open_file_cache          max=1000 inactive=500s;
+    open_file_cache_valid    600s;
+    open_file_cache_errors   on;
+    break;
+  }
+
+  location ~ / {
+    try_files /index.php =404;
+    
+    fastcgi_pass	php_fpm;
+    # Порядок важен - строчка "include fastcgi_params" должна быть первой
+    include fastcgi_params;
+    fastcgi_split_path_info			^(.+?\.php)/(.*)?$;
+    # Вместо переменной "$document_root" можно указать адрес к корневому каталогу сервера и это желательно (см. http://wiki.nginx.org/Pitfalls)
+    fastcgi_param	SCRIPT_FILENAME		$document_root$fastcgi_script_name;
+    fastcgi_param	PATH_TRANSLATED		$document_root$fastcgi_script_name;
+    # См. http://trac.nginx.org/nginx/ticket/321
+    set		$path_info		$fastcgi_path_info;
+    fastcgi_param	PATH_INFO		$path_info;
+    # Указание дополнительных переменных окружения PHP
+    fastcgi_param	SERVER_ADMIN		admin@example.com;
+    fastcgi_param	SERVER_SIGNATURE	nginx/$nginx_version;
+    fastcgi_index	index.php;
+  }
+  
+  access_log          /stuff2/work/fl/log/nginx-access.log;
+  error_log           /stuff2/work/fl/log/nginx-error.log;
+}
