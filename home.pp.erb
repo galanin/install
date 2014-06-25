@@ -7,6 +7,7 @@ class {'install':
 }
 
 class {'install::handbrake':}
+package {'mdadm':}
 package {'audacity':}
 package {'vlc':}
 package {'smplayer':}
@@ -15,14 +16,20 @@ package {'kget':}
 package {'ktorrent':}
 package {'mkvtoolnix-gui':}
 package {'filelight':} # disk usage
+package {'fdupes':}
 package {'flac':}
 package {'shntool':}
 package {'cuetools':}
 package {'ffmpeg':}
+package {'enca':}
 package {'lltag':}
 package {'mp3gain':}
+package {'wavpack':}
 package {'samba':}
 package {'cifs-utils':}
+package {'android-tools-adb':}
+package {'android-tools-fastboot':}
+package {'android-tools-fsutils':}
 
 package {'amarok': ensure => absent}
 package {'dragonplayer': ensure => absent}
