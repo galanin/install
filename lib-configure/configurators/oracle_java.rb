@@ -17,7 +17,7 @@ class PuppetConfigurator
     base_name = jdk_download_url_match[3]
 
     jdk_path = "#{settings['distribution_dir']}/java/jdk/#{build}/#{base_name}"
-    Internet.download_package(url, jdk_path, ['Cookie: gpw_e24=h'])
+    Internet.download_package(url, jdk_path, ['Cookie: oraclelicense=accept-securebackup-cookie'])
     jdk_root_folders = File.get_tar_top_folders_name(jdk_path)
 
     raise "Oracle Java: multiple root folders in #{jdk_path}" if jdk_root_folders.size > 1
