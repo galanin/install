@@ -2,7 +2,7 @@ class PuppetConfigurator
 
   def configure_oracle_java
     download_page = Internet.download_page('http://www.oracle.com/technetwork/java/javase/downloads/index.html')
-    jdk_download_page_match = %r{<a[^>]*href="([^"]+)"><img[^>]*Download JDK}.match download_page
+    jdk_download_page_match = %r{<a[^>]*href="([^"]+jdk8[^"]+)"><img[^>]*Download JDK}.match download_page
 
     raise "Oracle Java: unable to parse main download page" unless %r{^[/a-z\d\.\-]+$} =~ jdk_download_page_match[1]
 
