@@ -2,7 +2,7 @@ class install::postgresql {
 
   apt::source {'postgresql':
     location    => 'http://apt.postgresql.org/pub/repos/apt/',
-    release     => 'precise-pgdg',
+    release     => 'trusty-pgdg',
     repos       => 'main',
     key         => 'ACCC4CF8',
     key_source  => 'https://www.postgresql.org/media/keys/ACCC4CF8.asc',
