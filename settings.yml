@@ -4,12 +4,10 @@ group: gsv
 # where to store downloaded software distributions
 distribution_dir: /stuff/software
 
-plex_library_dir: /stuff/.plexmediaserver
-
 java_deployment_root: /usr/lib/jvm
 
 # where vms are stored or will be stored
 virtualbox_vms_dir: /stuff/vm
 
 # parent of the snapshots dir should exists
-backup_snapshots_dir: /backup/snapshots/dev1
+backup_snapshots_dir: /backup/snapshots/dev2
