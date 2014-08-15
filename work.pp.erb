@@ -19,6 +19,7 @@ class {'install::jetbrains_rubymine':
 }
 
 class {'install::postgresql':}
+class {'install::mongodb':}
 class {'install::tortoisehg':}
 class {'install::screencloud':}
 
@@ -28,6 +29,11 @@ package {'kcachegrind':}
 package {'kcachegrind-converters':}
 
 package {'nginx':}
+service {'nginx':
+    ensure  => 'running',
+    enable  => 'true',
+    require => Package['nginx'],
+}
 file {'/etc/nginx/sites-available/fl':
     ensure  => present,
     owner   => 'root',
@@ -47,8 +53,13 @@ file {'/etc/nginx/sites-available/gp':
     notify  => Service['nginx'],
 }
 
-package {'php-fpm':}
-package {'php-curl':}
+package {'php5-fpm':}
+package {'php5-curl':}
+service {'php5-fpm':
+    ensure  => 'running',
+    enable  => 'true',
+    require => Package['php5-fpm'],
+}
 file {'/etc/php5/fpm/pool.d/www.conf':
     ensure  => present,
     owner   => 'root',
