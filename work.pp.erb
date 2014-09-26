@@ -69,3 +69,9 @@ file {'/etc/php5/fpm/pool.d/www.conf':
     require => Package['php5-fpm'],
     notify  => Service['php5-fpm'],
 }
+
+package {'vagrant':
+    ensure   => latest,
+    provider => 'dpkg',
+    source   => <%= config[:vagrant][:distribution_path] %>,
+}
