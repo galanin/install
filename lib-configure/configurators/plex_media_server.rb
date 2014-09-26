@@ -3,8 +3,8 @@ class PuppetConfigurator
   def configure_plex_media_server
     architecture = case RbConfig::CONFIG['host_cpu'] when 'x86_64' then 'amd64' else 'i386' end
 
-    download_page = Internet.download_page('https://my.plexapp.com/downloads')
-    plex_download_url_match = %r{(http://download[^"]+#{architecture}\.deb)}.match download_page
+    download_page = Internet.download_page('https://plex.tv/downloads')
+    plex_download_url_match = %r{(https://downloads.plex.tv/[^"]+#{architecture}\.deb)}.match download_page
 
     raise 'Plex Media Server: unable to parse download page' unless plex_download_url_match
 
