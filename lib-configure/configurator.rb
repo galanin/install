@@ -14,12 +14,17 @@ class PuppetConfigurator
 
   def configure_all
     methods.each do |name|
-      send name if name.to_s.index('configure_') == 0 && name != :configure_all
+      begin
+        send name if name.to_s.index('configure_') == 0 && name != :configure_all
+      rescue Exception => e
+        puts e.message
+      end
     end
 
     def @config.[](bucket)
       values = super
       def values.[](key)
+        return 'undef' if self.nil?
         value = super
         value ? "'#{value}'" : 'undef'
       end
