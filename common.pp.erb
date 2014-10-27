@@ -24,6 +24,8 @@ class {'install::oracle_java':
   distribution_path => <%= config[:oracle_jdk][:distribution_path] %>,
   distribution_name => <%= config[:oracle_jdk][:distribution_name] %>,
 }
+package {'openjdk-7-jre': ensure => absent}
+package {'openjdk-7-jre-headless': ensure => absent}
 
 package {'imagemagick':}
 package {'yakuake':}
