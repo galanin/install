@@ -40,6 +40,34 @@ class {'install::sshd':}
 class {'install::mpd':}
 class {'install::transmission':}
 
+file_line {'tmp':
+    line => 'tmpfs                                       /tmp          tmpfs   defaults         0 0',
+    path => '/etc/fstab',
+}
+file_line {'stuff4':
+    line => 'UUID="7f6986f6-6db7-48cd-8323-11b4ff44f818" /stuff4       ext4    defaults,noatime 0 2',
+    path => '/etc/fstab',
+}
+file_line {'stuff5':
+    line => 'UUID="24d6e340-3d67-492c-9dfb-a48cad740b77" /stuff5       ext4    defaults,noatime 0 2',
+    path => '/etc/fstab',
+}
+file_line {'stuff6':
+    line => 'UUID="42be6f67-7d6b-4e33-9e15-e8e589e637da" /stuff6       ext4    defaults,noatime 0 2',
+    path => '/etc/fstab',
+}
+file_line {'stuff7':
+    line => 'UUID="4fb3a239-eb1d-4433-af80-a22baa0b3a88" /stuff7       ext4    defaults,noatime 0 2',
+    path => '/etc/fstab',
+}
+file_line {'stuff8':
+    line => 'UUID="145751df-f27d-4046-98fb-257b55e4721a" /stuff8       ext4    defaults,noatime 0 2',
+    path => '/etc/fstab',
+}
+file_line {'stuff9':
+    line => 'UUID="ef91adb1-1eaa-404e-9f2c-39a5f553c9d0" /stuff9       ext4    defaults,noatime 0 2',
+    path => '/etc/fstab',
+}
 
 package {'samba':}
 service { 'smbd':
