@@ -1,7 +1,7 @@
 class {'apt':}
 
 class {'install':
-    ubuntu => <%= config[:system][:codename] %>,
+    ubuntu => '<%= config[:system][:codename] %>',
     user   => '<%= settings['user'] %>',
     group  => '<%= settings['group'] %>',
 }
