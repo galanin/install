@@ -75,10 +75,16 @@ exec {'mount -a':
     ],
 }
 
-class {'install::xbmc':}
+class {'install::xbmc':
+    require => Exec['mount -a'],
+}
 class {'install::sshd':}
-class {'install::mpd':}
-class {'install::transmission':}
+class {'install::mpd':
+    require => Exec['mount -a'],
+}
+class {'install::transmission':
+    require => Exec['mount -a'],
+}
 
 package {'samba':}
 service { 'smbd':
