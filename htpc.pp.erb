@@ -86,9 +86,27 @@ file {'/etc/samba/smb.conf':
 }
 
 package {'avahi-utils':}
+file {'/var/lib/plexmediaserver':
+    ensure => 'link',
+    target => '/stuff5/.plex',
+}
 package {'plexmediaserver':
     ensure   => latest,
     provider => 'dpkg',
     source   => '<%= config[:plex_media_server][:distribution_path] %>',
-    require  => Package['avahi-utils'],
+    require  => [
+        Package['avahi-utils'],
+        File['/var/lib/plexmediaserver']
+    ],
 }
+file {'/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Preferences.xml':
+    ensure  => present,
+    owner   => 'plex',
+    group   => 'plex',
+    mode    => '0600',
+    content => template('install/var/plex/pref.xml.erb'),
+    require => Package['plexmediaserver'],
+    notify  => Service['plexmediaserver'],
+}
+
+
