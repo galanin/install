@@ -64,6 +64,17 @@ file_line {'stuff9':
     path => '/etc/fstab',
 }
 
+exec {'mount -a':
+    require => [
+        FileLine['stuff4'],
+        FileLine['stuff5'],
+        FileLine['stuff6'],
+        FileLine['stuff7'],
+        FileLine['stuff8'],
+        FileLine['stuff9']
+    ],
+}
+
 class {'install::xbmc':}
 class {'install::sshd':}
 class {'install::mpd':}
@@ -81,14 +92,18 @@ file {'/etc/samba/smb.conf':
     group   => 'root',
     mode    => '0644',
     content => template('install/etc/samba/smb.conf.htpc.erb'),
-    require => Package['samba'],
+    require => [
+        Exec['mount -a'],
+        Package['samba']
+    ],
     notify  => Service['smbd'],
 }
 
 package {'avahi-utils':}
 file {'/var/lib/plexmediaserver':
-    ensure => 'link',
-    target => '/stuff5/.plex',
+    ensure  => 'link',
+    target  => '/stuff5/.plex',
+    require => Exec['mount -a'],
 }
 package {'plexmediaserver':
     ensure   => latest,
