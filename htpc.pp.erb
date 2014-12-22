@@ -66,12 +66,12 @@ file_line {'stuff9':
 
 exec {'/bin/mount -a':
     require => [
-        FileLine['stuff4'],
-        FileLine['stuff5'],
-        FileLine['stuff6'],
-        FileLine['stuff7'],
-        FileLine['stuff8'],
-        FileLine['stuff9']
+        File_Line['stuff4'],
+        File_Line['stuff5'],
+        File_Line['stuff6'],
+        File_Line['stuff7'],
+        File_Line['stuff8'],
+        File_Line['stuff9']
     ],
 }
 
