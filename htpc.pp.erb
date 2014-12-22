@@ -64,7 +64,7 @@ file_line {'stuff9':
     path => '/etc/fstab',
 }
 
-exec {'mount -a':
+exec {'/bin/mount -a':
     require => [
         FileLine['stuff4'],
         FileLine['stuff5'],
@@ -76,14 +76,14 @@ exec {'mount -a':
 }
 
 class {'install::xbmc':
-    require => Exec['mount -a'],
+    require => Exec['/bin/mount -a'],
 }
 class {'install::sshd':}
 class {'install::mpd':
-    require => Exec['mount -a'],
+    require => Exec['/bin/mount -a'],
 }
 class {'install::transmission':
-    require => Exec['mount -a'],
+    require => Exec['/bin/mount -a'],
 }
 
 package {'samba':}
@@ -99,7 +99,7 @@ file {'/etc/samba/smb.conf':
     mode    => '0644',
     content => template('install/etc/samba/smb.conf.htpc.erb'),
     require => [
-        Exec['mount -a'],
+        Exec['/bin/mount -a'],
         Package['samba']
     ],
     notify  => Service['smbd'],
@@ -109,7 +109,7 @@ package {'avahi-utils':}
 file {'/var/lib/plexmediaserver':
     ensure  => 'link',
     target  => '/stuff5/.plex',
-    require => Exec['mount -a'],
+    require => Exec['/bin/mount -a'],
 }
 # configure: plex_media_server
 package {'plexmediaserver':
