@@ -26,4 +26,12 @@ class install::mpd {
     ensure => '/stuff7/music',
     require => Package['mpd'],
   }
+  file {'/var/lib/mpd/music/music.new':
+    ensure => '/stuff6/music.new',
+    require => Package['mpd'],
+  }
+  file {'/var/lib/mpd/music/torrents':
+    ensure => '/stuff5/torrents',
+    require => Package['mpd'],
+  }
 }
