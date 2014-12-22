@@ -35,11 +35,6 @@ exec {'disable_scopes':
     path    => ['/sbin', '/bin', '/usr/sbin', '/usr/bin'],
 }
 
-class {'install::xbmc':}
-class {'install::sshd':}
-class {'install::mpd':}
-class {'install::transmission':}
-
 file_line {'tmp':
     line => 'tmpfs                                       /tmp          tmpfs   defaults         0 0',
     path => '/etc/fstab',
@@ -68,6 +63,11 @@ file_line {'stuff9':
     line => 'UUID="ef91adb1-1eaa-404e-9f2c-39a5f553c9d0" /stuff9       ext4    defaults,noatime 0 2',
     path => '/etc/fstab',
 }
+
+class {'install::xbmc':}
+class {'install::sshd':}
+class {'install::mpd':}
+class {'install::transmission':}
 
 package {'samba':}
 service { 'smbd':
