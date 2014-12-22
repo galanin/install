@@ -1,7 +1,7 @@
 class {'apt':}
 
 class {'install':
-  ubuntu => <%= config[:system][:codename] %>,
+  ubuntu => '<%= config[:system][:codename] %>',
   user   => '<%= settings['user'] %>',
   group  => '<%= settings['group'] %>',
 }
@@ -15,14 +15,14 @@ class {'install::opera':}
 class {'install::qutim':}
 
 class {'install::virtualbox':
-  version => <%= config[:virtualbox][:version] %>,
+  version => '<%= config[:virtualbox][:version] %>',
   virtualbox_vms_dir => '<%= settings['virtualbox_vms_dir'] %>',
-  extpack_path => <%= config[:virtualbox][:extpack_path] %>,
+  extpack_path => '<%= config[:virtualbox][:extpack_path] %>',
 }
 
 class {'install::oracle_java':
-  distribution_path => <%= config[:oracle_jdk][:distribution_path] %>,
-  distribution_name => <%= config[:oracle_jdk][:distribution_name] %>,
+  distribution_path => '<%= config[:oracle_jdk][:distribution_path] %>',
+  distribution_name => '<%= config[:oracle_jdk][:distribution_name] %>',
 }
 package {'openjdk-7-jre': ensure => absent}
 package {'openjdk-7-jre-headless': ensure => absent}
@@ -40,7 +40,7 @@ package {'firefox':}
 package {'traceroute':}
 
 package {'skype':
-  source => <%= config[:skype][:distribution_path] %>,
+  source => '<%= config[:skype][:distribution_path] %>',
   provider => 'dpkg',
 }
 
