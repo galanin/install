@@ -1,7 +1,7 @@
 class {'apt':}
 
 class {'install':
-    ubuntu => '<%= config[:system][:codename] %>',
+    ubuntu => <%= config[:system][:codename] %>,
     user   => '<%= settings['user'] %>',
     group  => '<%= settings['group'] %>',
 }
@@ -115,7 +115,7 @@ file {'/var/lib/plexmediaserver':
 package {'plexmediaserver':
     ensure   => latest,
     provider => 'dpkg',
-    source   => '<%= config[:plex_media_server][:distribution_path] %>',
+    source   => <%= config[:plex_media_server][:distribution_path] %>,
     require  => [
         Package['avahi-utils'],
         File['/var/lib/plexmediaserver']

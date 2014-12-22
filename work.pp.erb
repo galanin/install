@@ -1,7 +1,7 @@
 class {'apt':}
 
 class {'install':
-    ubuntu => '<%= config[:system][:codename] %>',
+    ubuntu => <%= config[:system][:codename] %>,
     user   => '<%= settings['user'] %>',
     group  => '<%= settings['group'] %>',
 }
@@ -15,8 +15,8 @@ file {'/w':
 
 # configure: jetbrains_rubymine
 class {'install::jetbrains_rubymine':
-    distribution_path => '<%= config[:jetbrains_rubymine][:distribution_path] %>',
-    distribution_name => '<%= config[:jetbrains_rubymine][:distribution_name] %>',
+    distribution_path => <%= config[:jetbrains_rubymine][:distribution_path] %>,
+    distribution_name => <%= config[:jetbrains_rubymine][:distribution_name] %>,
 }
 
 class {'install::postgresql':}
@@ -76,5 +76,5 @@ file {'/etc/php5/fpm/pool.d/www.conf':
 package {'vagrant':
     ensure   => latest,
     provider => 'dpkg',
-    source   => '<%= config[:vagrant][:distribution_path] %>',
+    source   => <%= config[:vagrant][:distribution_path] %>,
 }
