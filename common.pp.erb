@@ -14,12 +14,14 @@ class {'install::opera':}
 
 class {'install::qutim':}
 
+# configure: virtualbox
 class {'install::virtualbox':
   version => '<%= config[:virtualbox][:version] %>',
   virtualbox_vms_dir => '<%= settings['virtualbox_vms_dir'] %>',
   extpack_path => '<%= config[:virtualbox][:extpack_path] %>',
 }
 
+# configure: oracle_java
 class {'install::oracle_java':
   distribution_path => '<%= config[:oracle_jdk][:distribution_path] %>',
   distribution_name => '<%= config[:oracle_jdk][:distribution_name] %>',
@@ -39,6 +41,7 @@ package {'gimp':}
 package {'firefox':}
 package {'traceroute':}
 
+# configure: skype
 package {'skype':
   source => '<%= config[:skype][:distribution_path] %>',
   provider => 'dpkg',

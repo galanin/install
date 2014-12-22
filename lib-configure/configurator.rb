@@ -12,13 +12,9 @@ class PuppetConfigurator
 
   attr_reader :config, :settings
 
-  def configure_all
-    methods.each do |name|
-      begin
-        send name if name.to_s.index('configure_') == 0 && name != :configure_all
-      rescue Exception => e
-        puts e.message
-      end
+  def configure(parts)
+    parts.each do |part|
+      send "configure_#{part}"
     end
 
     def @config.[](bucket)

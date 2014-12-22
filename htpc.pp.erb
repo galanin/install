@@ -111,6 +111,7 @@ file {'/var/lib/plexmediaserver':
     target  => '/stuff5/.plex',
     require => Exec['mount -a'],
 }
+# configure: plex_media_server
 package {'plexmediaserver':
     ensure   => latest,
     provider => 'dpkg',

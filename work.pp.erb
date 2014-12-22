@@ -13,6 +13,7 @@ file {'/w':
     mode   => '0755',
 }
 
+# configure: jetbrains_rubymine
 class {'install::jetbrains_rubymine':
     distribution_path => '<%= config[:jetbrains_rubymine][:distribution_path] %>',
     distribution_name => '<%= config[:jetbrains_rubymine][:distribution_name] %>',
@@ -71,6 +72,7 @@ file {'/etc/php5/fpm/pool.d/www.conf':
     notify  => Service['php5-fpm'],
 }
 
+# configure: vagrant
 package {'vagrant':
     ensure   => latest,
     provider => 'dpkg',
