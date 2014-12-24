@@ -35,6 +35,12 @@ exec {'disable_scopes':
     path    => ['/sbin', '/bin', '/usr/sbin', '/usr/bin'],
 }
 
+file {'/stuff4': ensure => directory}
+file {'/stuff5': ensure => directory}
+file {'/stuff6': ensure => directory}
+file {'/stuff7': ensure => directory}
+file {'/stuff8': ensure => directory}
+file {'/stuff9': ensure => directory}
 file_line {'tmp':
     line => 'tmpfs                                       /tmp          tmpfs   defaults         0 0',
     path => '/etc/fstab',
@@ -66,6 +72,12 @@ file_line {'stuff9':
 
 exec {'/bin/mount -a':
     require => [
+        File['/stuff4'],
+        File['/stuff5'],
+        File['/stuff6'],
+        File['/stuff7'],
+        File['/stuff8'],
+        File['/stuff9'],
         File_Line['stuff4'],
         File_Line['stuff5'],
         File_Line['stuff6'],
