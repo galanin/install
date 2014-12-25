@@ -2,14 +2,15 @@
 #
 # Sets a configuration key in Gnome’s GSettings registry.
 #
-define gnome::gsettings(
+define install::gsettings(
+  $user,
   $schema,
   $key,
   $value,
   $directory = '/usr/share/glib-2.0/schemas',
   $priority  = '25',
 ) {
-  file { "${directory}/${priority}_${name}.gschema.override":
+  file { "${directory}/${priority}_${user}.gschema.override":
     content => "[${schema}]\n  ${key} = ${value}\n",
   }
   ~>
