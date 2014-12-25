@@ -29,10 +29,21 @@ package {'totem': ensure => absent}
 package {'totem-common': ensure => absent}
 package {'rhythmbox': ensure => absent}
 
-exec {'disable_scopes':
-    command => "gsettings set com.canonical.Unity.Lenses disabled-scopes \"['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']\"",
+exec {'disabled-scopes':
+    command => "/usr/bin/gsettings set com.canonical.Unity.Lenses disabled-scopes \"['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']\"",
     user    => $install::user,
-    path    => ['/sbin', '/bin', '/usr/sbin', '/usr/bin'],
+}
+exec {'power-button':
+    command => '/usr/bin/gsettings set org.gnome.settings-daemon.plugins.power power-button shutdown',
+    user    => $install::user,
+}
+exec {'lock-enabled':
+    command => '/usr/bin/gsettings set com.canonical.Unity.Lenses lock-enabled false',
+    user    => $install::user,
+}
+exec {'idle-activation-enabled':
+    command => '/usr/bin/gsettings set org.gnome.desktop.screensaver idle-activation-enabled false',
+    user    => $install::user,
 }
 
 file {'/stuff4': ensure => directory}
@@ -146,11 +157,4 @@ file {'/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Pr
     content => template('install/var/plex/pref.xml.erb'),
     require => Package['plexmediaserver'],
     notify  => Service['plexmediaserver'],
-}
-
-install::gsettings { 'button-power':
-    user => $install::user,
-    schema => 'org.gnome.settings-daemon.plugins.power',
-    key => 'button-power',
-    value => 'shutdown',
 }
