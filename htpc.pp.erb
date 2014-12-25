@@ -148,4 +148,9 @@ file {'/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Pr
     notify  => Service['plexmediaserver'],
 }
 
-
+gnome::gsettings { 'button-power':
+    user => $install::user,
+    schema => 'org.gnome.settings-daemon.plugins.power',
+    key => 'button-power',
+    value => 'shutdown',
+}
