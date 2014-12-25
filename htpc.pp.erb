@@ -30,19 +30,19 @@ package {'totem-common': ensure => absent}
 package {'rhythmbox': ensure => absent}
 
 exec {'disabled-scopes':
-    command => "/usr/bin/gsettings set com.canonical.Unity.Lenses disabled-scopes \"['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']\"",
+    command => "/usr/bin/dbus-launch /usr/bin/gsettings set com.canonical.Unity.Lenses disabled-scopes \"['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']\"",
     user    => $install::user,
 }
 exec {'power-button':
-    command => '/usr/bin/gsettings set org.gnome.settings-daemon.plugins.power button-power shutdown',
+    command => '/usr/bin/dbus-launch /usr/bin/gsettings set org.gnome.settings-daemon.plugins.power button-power shutdown',
     user    => $install::user,
 }
 exec {'lock-enabled':
-    command => '/usr/bin/gsettings set org.gnome.desktop.screensaver lock-enabled false',
+    command => '/usr/bin/dbus-launch /usr/bin/gsettings set org.gnome.desktop.screensaver lock-enabled false',
     user    => $install::user,
 }
 exec {'idle-activation-enabled':
-    command => '/usr/bin/gsettings set org.gnome.desktop.screensaver idle-activation-enabled false',
+    command => '/usr/bin/dbus-launch /usr/bin/gsettings set org.gnome.desktop.screensaver idle-activation-enabled false',
     user    => $install::user,
 }
 
