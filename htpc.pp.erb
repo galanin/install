@@ -38,7 +38,7 @@ exec {'power-button':
     user    => $install::user,
 }
 exec {'lock-enabled':
-    command => '/usr/bin/gsettings set com.canonical.Unity.Lenses lock-enabled false',
+    command => '/usr/bin/gsettings set org.gnome.desktop.screensaver lock-enabled false',
     user    => $install::user,
 }
 exec {'idle-activation-enabled':
