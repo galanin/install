@@ -29,21 +29,43 @@ package {'totem': ensure => absent}
 package {'totem-common': ensure => absent}
 package {'rhythmbox': ensure => absent}
 
+file {'/usr/bin/gset':
+    ensure => present,
+    owner  => root,
+    group  => root,
+    mode   => '0755',
+    source => 'puppet:///modules/install/usr/bin/gset',
+}
+
 exec {'disabled-scopes':
-    command => "/usr/bin/dbus-launch /usr/bin/gsettings set com.canonical.Unity.Lenses disabled-scopes \"['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']\"",
+    command => "/usr/bin/gset com.canonical.Unity.Lenses disabled-scopes \"['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']\"",
     user    => $install::user,
+    require => File['/usr/bin/gset'],
 }
 exec {'power-button':
-    command => '/usr/bin/dbus-launch /usr/bin/gsettings set org.gnome.settings-daemon.plugins.power button-power shutdown',
+    command => '/usr/bin/gset org.gnome.settings-daemon.plugins.power button-power shutdown',
     user    => $install::user,
+    require => File['/usr/bin/gset'],
 }
 exec {'lock-enabled':
-    command => '/usr/bin/dbus-launch /usr/bin/gsettings set org.gnome.desktop.screensaver lock-enabled false',
+    command => '/usr/bin/gset org.gnome.desktop.screensaver lock-enabled false',
     user    => $install::user,
+    require => File['/usr/bin/gset'],
 }
 exec {'idle-activation-enabled':
-    command => '/usr/bin/dbus-launch /usr/bin/gsettings set org.gnome.desktop.screensaver idle-activation-enabled false',
+    command => '/usr/bin/gset org.gnome.desktop.screensaver idle-activation-enabled false',
     user    => $install::user,
+    require => File['/usr/bin/gset'],
+}
+exec {'idle-activation-enabled':
+    command => '/usr/bin/gset org.gnome.desktop.screensaver ubuntu-lock-on-suspend false',
+    user    => $install::user,
+    require => File['/usr/bin/gset'],
+}
+exec {'idle-activation-enabled':
+    command => '/usr/bin/gset org.gnome.desktop.session idle-delay "uint32 0"',
+    user    => $install::user,
+    require => File['/usr/bin/gset'],
 }
 
 file {'/stuff4': ensure => directory}
