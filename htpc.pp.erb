@@ -42,7 +42,7 @@ exec {'disabled-scopes':
     user    => $install::user,
     require => File['/usr/bin/gset'],
 }
-exec {'power-button':
+exec {'button-power':
     command => '/usr/bin/gset org.gnome.settings-daemon.plugins.power button-power shutdown',
     user    => $install::user,
     require => File['/usr/bin/gset'],
@@ -57,12 +57,12 @@ exec {'idle-activation-enabled':
     user    => $install::user,
     require => File['/usr/bin/gset'],
 }
-exec {'idle-activation-enabled':
+exec {'ubuntu-lock-on-suspend':
     command => '/usr/bin/gset org.gnome.desktop.screensaver ubuntu-lock-on-suspend false',
     user    => $install::user,
     require => File['/usr/bin/gset'],
 }
-exec {'idle-activation-enabled':
+exec {'idle-delay':
     command => '/usr/bin/gset org.gnome.desktop.session idle-delay "uint32 0"',
     user    => $install::user,
     require => File['/usr/bin/gset'],
