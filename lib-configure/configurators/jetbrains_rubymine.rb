@@ -3,8 +3,8 @@ require 'fileutils'
 class PuppetConfigurator
 
   def configure_jetbrains_rubymine
-    download_page = Internet.download_page('http://www.jetbrains.com/ruby/download/download_thanks.jsp?os=linux')
-    rubymine_download_url_match = %r{<a href="(http://download[^"]+)">direct link}.match download_page
+    download_page = Internet.download_page('https://www.jetbrains.com/ruby/download/download_thanks.jsp?os=linux')
+    rubymine_download_url_match = %r{<a href="(http://download[^"]+)">HTTP<}.match download_page
 
     raise "JetBrains RubyMine: unable to parse download page" unless %r{^[:/a-z\d\.\-]+$}i =~ rubymine_download_url_match[1]
 
