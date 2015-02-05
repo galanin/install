@@ -9,22 +9,22 @@ class install::postgresql {
     include_src => false,
   }
 
-  package {'postgresql-client-9.3':
+  package {'postgresql-client-9.4':
     ensure =>  present,
     require => Apt::Source['postgresql'],
   }
 
-  package {'postgresql-9.3':
+  package {'postgresql-9.4':
     ensure =>  present,
     require => Apt::Source['postgresql'],
   }
 
-  package {'postgresql-contrib-9.3':
+  package {'postgresql-contrib-9.4':
     ensure =>  present,
     require => Apt::Source['postgresql'],
   }
 
-  package {'postgresql-server-dev-9.3':
+  package {'postgresql-server-dev-9.4':
     ensure =>  present,
     require => Apt::Source['postgresql'],
   }
