@@ -1,4 +1,4 @@
-class install::sublime-text-2 {
+class install::sublime_text_2 {
 
   apt::ppa {'ppa:webupd8team/sublime-text-2':}
 

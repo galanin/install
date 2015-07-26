@@ -1,3 +1,4 @@
+# puppet module install puppetlabs-apt
 class {'apt':}
 
 class {'install':
@@ -8,7 +9,7 @@ class {'install':
 
 class {'install::google::chrome':}
 
-class {'install::sublime-text-2':}
+class {'install::sublime_text_2':}
 
 class {'install::opera':}
 
@@ -16,9 +17,9 @@ class {'install::qutim':}
 
 # configure: virtualbox
 class {'install::virtualbox':
-  version => <%= config[:virtualbox][:version] %>,
+  version            => <%= config[:virtualbox][:version] %>,
   virtualbox_vms_dir => '<%= settings['virtualbox_vms_dir'] %>',
-  extpack_path => <%= config[:virtualbox][:extpack_path] %>,
+  extpack_path       => <%= config[:virtualbox][:extpack_path] %>,
 }
 
 # configure: oracle_java
@@ -43,7 +44,7 @@ package {'traceroute':}
 
 # configure: skype
 package {'skype':
-  source => <%= config[:skype][:distribution_path] %>,
+  source   => <%= config[:skype][:distribution_path] %>,
   provider => 'dpkg',
 }
 
