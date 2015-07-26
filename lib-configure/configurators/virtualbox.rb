@@ -3,7 +3,7 @@ class PuppetConfigurator
   def configure_virtualbox
     download_page = Internet.download_page('https://www.virtualbox.org/wiki/Downloads')
 
-    virtualbox_version_match = %r{VirtualBox (\d.\d+).\d+ for Linux hosts}.match download_page
+    virtualbox_version_match = %r{VirtualBox (\d.\d+)(?:.\d+)? for Linux hosts}.match download_page
 
     raise "Virtualbox: unable to parse version" unless virtualbox_version_match[1]
 
